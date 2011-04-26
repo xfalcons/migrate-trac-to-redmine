@@ -1,0 +1,76 @@
+[[TOC(depth=0)]]
+
+h1. Welcome to examplella
+
+h2. General
+
+* [//projects/example/wiki/ProductManagement/exampleTeamMembers 全 Team 通訊錄]
+
+h2. Departments
+
+* [[Admin|Admin Team]]
+* [[ProductManagement|PM Team]]
+* [[Production|Production Team]]
+* [[Engineering|Engineer Team]]
+** JM - [./RouterProjectSchedule Schedule and Spec of wiiiBar + wiiiCasa + widgets] 
+** QA - [ProfileBugList Profile Bug List]
+
+
+h2. Bulltin Boards
+
+* 2011/4/15 examplella  更新如下（有問題請）：
+  1. 將 wiiiCasa Team 與 Router 合併為單一 Project，以下三個網址皆可使用：
+*** http://examplella.corp.wiiicasa.com/projects/wiiicasa
+*** http://examplella.corp.wiiicasa.com/projects/example
+*** http://examplella.corp.wiiicasa.com/projects/router
+  1. 以前的 wiki 或 history 資料不見了嗎，請到此網址尋找：
+*** http://examplella.corp.wiiicasa.com/projects/example-archive
+  1. wiki 內容批次取代：
+
+      ||=舊有字串=||=已被修改為=||
+      || examplella.company.com.tw || examplella.corp.wiiicasa.com ||
+      || example.com || wiiicasa.com ||
+      || git-example.company.com.tw || git.corp.wiiicasa.com ||
+      || devm1-example.company.com.tw || devm1.corp.wiiicasa.com ||
+
+h2. Email
+
+    ||=部門別=|| 縮寫 ||
+    ||全 Team||[mailto:IABU@company.com.tw IABU]||
+    ||網路服務處||[mailto:ISDV@company.com.tw ISDV]||
+    ||策略規劃部||[mailto:BSD@company.com.tw BSD]||
+    ||服務設計研發部||[mailto:PDD@company.com.tw PDD]||
+    ||技術研發部||[mailto:ISED@company.com.tw ISED]||
+
+h2. Documents
+
+* [./ReqForRouterTeam Requirements for router team] ([./ReqForRouterTeam/Charts Charts], [./ReqForRouterTeam/MeetingMinutes Meeting Minutes], [./ReqForRouterTeam/ToDo To Do List])
+* [./WebSerReqForDev Web Service Requirements for Devices] (([./WebSerReqForDev/Charts Charts])
+* [./RouterApiForAugmentum [[RouterAPI]] Docs for Augmentum] (Don't modify it)
+* [./WishfiPatent Wishfi Patent]
+* [./RouterTestingTool Router testing tool]
+* "Introduction to Scrum":http://examplella.corp.wiiicasa.com/projects/example/raw-attachment/wiki/u/jill_wu/scrum_intro.pptx ^[[Color(none,red,NEW)]]^
+* "examplella Trac Format":http://examplella.corp.wiiicasa.com/projects/example/attachment/wiki/Engineering/PluginTesting/trac_format.docx
+* "Flow Chart Symbols":http://examplella.corp.wiiicasa.com/projects/example/attachment/wiki/Engineering/PluginTesting/flowchart.docx
+* [./KickOff IABU kick off 09102010]
+* [AccessTerminalServer Access Terminal Server to use virtual machine to test] ^[[Color(none,red,NEW)]]^
+* [./teatime  下午茶名單]
+* [./library examplella library]
+
+h1. Using Virtual Machine from Terminal Server
+
+[[TOC(depth=2)]]
+
+h2. Purpose
+
+ 1. -Windows XP目前僅能修改至三人同時遠端登入
+ 1. -無法同步Virtual Machine與 Terminal Server帳號
+ 1. -因為目前一台Virtual Machine只能讓三人同時遠端入
+ 1. 可由Internet遠端連線至Terminal Server
+
+ 1. 輸入Terminal Server IP: [[Color(none,red,172.17.8.201)]][[br]][[Image(01.JPG)]]
+ 1. 登入完成，桌面顯示即為各個虛擬主機[[br]][[Image(03.JPG, 800px)]]
+ 1. 輸入[[Color(none,red,%windir%\system32\mstsc.exe /v:172.17.8.201)]]，點選下一步[[br]][[Image(04.JPG)]]
+
+[[Include(wiki:u/kevin_luo/Weekly20110323)]]
+[[Include(wiki:u/joseph_chiang/Weekly20110323)]] 
