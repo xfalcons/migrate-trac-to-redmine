@@ -1,0 +1,18 @@
+1. Files list
+  * sample.wiki: A wiki sample which have been migrated from trac. There are incompatible wiki formats for redmine. 
+  * modify_sample_wiki.php: Convert sample wiki to compliant to redmine wiki format.
+  * formation.php: Contain all the conversion functions and main function for convert wiki format.
+  * modify_redmine_wiki.php: Connect to your redmine DB and convert wiki page format.
+2. Before runing, there are several functions need your customization.
+  * formation.php
+    * function replace_string(&$data): change those strings as your needs.
+  * modify_redmine_wiki.php: change those configurations accordingly.
+    * $db_host = "127.0.0.1";
+    * $db_name = "redmine";
+    * $db_user = "redmine_user";
+    * $db_pass = "redmine_pass";
+3. Running
+  * Try ./modify_sample_wiki.php first to check the output format. And then fine tune formation.php as your needs.
+  * Backup your table: wiki_contents.
+    * mysqldump -u root redmine wiki_contents | gzip > wiki_contents.sql.gz
+  * Run ./modify_redmine_wiki.php. This will update your wiki content in your DB.
